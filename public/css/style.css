@@ -4,6 +4,7 @@
 }
 html, body {
 	min-width:940px;
+	
 }
 body {
 	background:#000;
@@ -11,6 +12,7 @@ body {
 	font-size:100%;
 	line-height:1em;
 	color:#858585;
+	height: 100% !important;
 }
 object {
 	vertical-align:top;
@@ -483,3 +485,4 @@ h4 {
 a {
 	outline:none;
 }
+
