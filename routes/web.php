@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\SiteController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,3 +21,10 @@ Route::get('/', function () {
 Route::get('/article', function () {
     return view('article');
 });
+
+// Route::get('event/{id}', function () {
+//     return view('event');
+// });
+
+Route::get('event/{name}/{id}', [SiteController::class, 'index'])->name('event.index');
+Route::get('eventitem/{name}/{id}/{event_id}', [SiteController::class, 'eventitem'])->name('event.eventitem');
